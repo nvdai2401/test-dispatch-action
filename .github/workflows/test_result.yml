@@ -1,0 +1,16 @@
+name: Test dispatch
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  repository_dispatch:
+    types: [test_result]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Result action
+        run: true
