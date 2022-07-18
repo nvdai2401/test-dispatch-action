@@ -1,10 +1,10 @@
 name: Test dispatch
 
 on:
+  repository_dispatch:
+    types: [test_result_dispatch]
   pull_request:
     types: [opened, synchronize, reopened]
-  repository_dispatch:
-    types: [test_result]
 
 jobs:
   test:
