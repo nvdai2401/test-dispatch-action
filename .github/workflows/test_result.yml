@@ -20,6 +20,7 @@ jobs:
           title: "Playwright test failed"
           body: |
             ### Agenda
+            Action: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
 
             - [ ] Start the recording
             - [ ] Check-ins
