@@ -30,7 +30,7 @@ jobs:
             Add things to discuss below
 
             - [Work this week](https://github.com/orgs/github/projects/3)
-          pinned: false
+          pinned: true
           close-previous: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
